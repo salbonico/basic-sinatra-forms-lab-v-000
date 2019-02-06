@@ -7,9 +7,11 @@ get '/newteam' do
 end
 
 post '/team' do
-
-
-  erb :team
+@coach = params[:coach]
+@team_name = params[:team_name]
+@point_guard = params[:point_guard]
+@shooting_guard = params[:shooting_guard]
+erb :team
 end
 
 
